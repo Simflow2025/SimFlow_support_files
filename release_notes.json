@@ -1,0 +1,69 @@
+{
+  "current_version": "v2.1.3",
+  "last_update": "2026-09-02",
+  "releases": [
+    {
+      "version": "v2.1.3",
+      "date": "September 2, 2026",
+      "highlights": [
+        {
+          "title": "Simulation filtering",
+          "description": "Priority and Location selections are now consistently applied to simulation input data."
+        },
+        {
+          "title": "Project Summary",
+          "description": "Counts, peak hour and mapping checks now reflect only the simulated workload."
+        },
+        {
+          "title": "Simulation input files",
+          "description": "Boolean configuration flags are standardized to numeric 1 / 0 values."
+        },
+        {
+          "title": "Export reliability",
+          "description": "Improved validation and generation of ExtendSim input files."
+        }
+      ],
+      "details": [
+        "Priority Simulation selections are applied to simulation data.",
+        "Location Simulation selections are applied to simulation data.",
+        "Excluded workload is removed from simulation input files.",
+        "Project Summary test, tube and peak-hour values use the simulated workload.",
+        "Mapping validation ignores excluded tests.",
+        "Instrument requirement checks use only simulated tests.",
+        "Priority flags are standardized to 1 / 0.",
+        "Centrifuge percentage flags are standardized to 1 / 0.",
+        "I/O Module flags are standardized to 1 / 0.",
+        "Location centrifuge flags are standardized to 1 / 0.",
+        "CentrifugePriorityFlag is automatically enabled when a simulated priority bypasses centrifugation.",
+        "Workload debugging information is hidden by default."
+      ]
+    },
+    {
+      "version": "v2.1.2",
+      "date": "August 25, 2026",
+      "highlights": [
+        {
+          "title": "More Settings",
+          "description": "Added persistent advanced automation configuration."
+        },
+        {
+          "title": "Simulation export",
+          "description": "Improved ExtendSim input generation and parameter handling."
+        }
+      ],
+      "details": [
+        "Added persistent More Settings for saved automation layouts.",
+        "Added Decapper percentage and tube-type exclusions.",
+        "Added Sealer percentage and tube-type exclusions.",
+        "Added RSM percentage and tube-type exclusions.",
+        "Added Aliquoter settings and tube-type exclusions.",
+        "Added SVD and USH tube exclusions.",
+        "Added I/O Module tube exclusions.",
+        "Added centrifuge percentage settings by tube type.",
+        "Improved parameter flags for More Settings.",
+        "Tube-type exclusions are converted to numeric TubeType IDs for ExtendSim.",
+        "Improved generation of simulation TXT input files."
+      ]
+    }
+  ]
+}
